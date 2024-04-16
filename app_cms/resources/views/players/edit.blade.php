@@ -38,8 +38,15 @@
                     </span>
                 @enderror
                 <div class="mb-3">
-                    <label for="team" class="form-label">Existing Team</label>
-                    <input type="text" class="form-control" id="team" name="team" aria-describedby="team" value="{{ optional($player->team )->team_name }}" disabled>
+                    <label for="team_id" class="form-label">Select Team</label>
+                    <select class="form-select" id="team_id" name="team_id">
+                        <option value="">Select Team</option>
+                        @foreach($teams as $team)
+                            <option value="{{ $team->id }}" {{ $player->team_id == $team->id ? 'selected' : '' }}>
+                                {{ $team->team_name }}
+                            </option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>

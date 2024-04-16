@@ -3,3 +3,13 @@
 @import 'tailwindcss/utilities';
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Graduate", sans-serif;
+}
+
+h1 {
+    font-size: 1.4em;
+}

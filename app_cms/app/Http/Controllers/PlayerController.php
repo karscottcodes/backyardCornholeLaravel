@@ -57,7 +57,7 @@ class PlayerController extends Controller
      */
     public function edit(Player $player)
     {
-        return view("players.edit", ["player" => $player, "teams" => Team::find($id)]);
+        return view("players.edit", ["player" => $player, "teams" => Team::all()]);
     }
 
     /**

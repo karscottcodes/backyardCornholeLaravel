@@ -2,10 +2,10 @@
 @section('content')
     <div class="row">
         <div class="col">
-            <h1>
+            <h1 class="mb-3">
                 View All Players
             </h1>
-            <a class="btn btn-success" href="/players/create">+ Add New Player</a>
+            <a class="btn btn-success mb-3" href="/players/create">+ Add New Player</a>
         </div>
     </div>
     <div class="row">
